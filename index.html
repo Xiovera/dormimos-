@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<title>Objetivo del Squad 80%</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One" rel="stylesheet">
+</head>
+<body>
+	<div class="objetivo-fondo">
+		<h1 class="text-center">Objetivo del Squad: 80%</h1>
+		<p><img src="logus.png" alt="" class="img-responsive center-block"></p>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-2">
+				<div class="form-group">
+					<label for="Squad">Escoge tu squad</label>
+					<select class="form-control" id="dia">
+						<option value="1">Xtreme Coders.js</option>
+						<option value="2">Coders Space</option>
+						<option value="3">Dominó</option>
+						<option value="4">Harley Squad</option>
+						<option value="5">404!</option>
+						<option value="6">Agile Script</option>
+					</select>
+				</div>
+				<p>
+					<label for="">Puntos Squad:</label>
+					<input  class="form-control" type="text" id="punto_squad">
+				</p>
+				<p>
+					<label for="">Cantidad máxima de puntos:</label>
+					<input class="form-control" type="text" id="max_puntos">
+				</p>
+				<p>
+					<button onclick="calcular()" type="button" class="btn btn-info btn-lg center-block">Calcular</button>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h2 class="btn btn-danger center-block" role="alert" id="salida"></h2>				
+			</div>	
+		</div>
+	</div>
+	</div>	
+</body>
+<script src="Js/main.js"></script>
+</html>
