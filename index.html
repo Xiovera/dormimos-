@@ -6,46 +6,50 @@
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<title>Objetivo del Squad 80%</title>
+	<title>¿Dormimos?</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredoka+One" rel="stylesheet">
 </head>
 <body>
-	<div class="objetivo-fondo">
-		<h1 class="text-center">Objetivo del Squad: 80%</h1>
-		<p><img src="logus.png" alt="" class="img-responsive center-block"></p>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-md-offset-2">
-				<div class="form-group">
-					<label for="Squad">Escoge tu squad</label>
-					<select class="form-control" id="dia">
-						<option value="1">Xtreme Coders.js</option>
-						<option value="2">Coders Space</option>
-						<option value="3">Dominó</option>
-						<option value="4">Harley Squad</option>
-						<option value="5">404!</option>
-						<option value="6">Agile Script</option>
-					</select>
-				</div>
-				<p>
-					<label for="">Puntos Squad:</label>
-					<input  class="form-control" type="text" id="punto_squad">
-				</p>
-				<p>
-					<label for="">Cantidad máxima de puntos:</label>
-					<input class="form-control" type="text" id="max_puntos">
-				</p>
-				<p>
-					<button onclick="calcular()" type="button" class="btn btn-info btn-lg center-block">Calcular</button>
-				</p>
-			</div>
-			<div class="col-md-4">
-				<h2 class="btn btn-danger center-block" role="alert" id="salida"></h2>				
-			</div>	
+<div class="container">
+	<div class="row">
+		<div class=" col-md-6 col-md-offset-3">
+			<h1 class="text-center">¿Puedes dormir?</h1>
+			<p class="text-center">Completa éste formulario y te diré si puedes hacerlo.</p>
+			<hr>			
 		</div>
 	</div>
-	</div>	
+	<div class="row">
+		<div class="col-md-5 col-md-offset-2">
+			<div class="form-group">
+				<label for="dia">¿Qué día es hoy?</label>
+				<select class="form-control" id="dia">
+					<option value="1">Lunes</option>
+					<option value="2">Martes</option>
+					<option value="3">Miércoles</option>
+					<option value="4">Jueves</option>
+					<option value="5">Viernes</option>
+					<option value="6">Sábado</option>
+					<option value="7">Domingo</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="vacaciones">¿Estás de vacaciones?</label>
+				<select class="form-control" id="vacaciones">
+					<option value="1">Si</option>
+					<option value="2">No</option>
+				</select>
+			</div>	
+			<button onclick="calcular()" class="btn btn-info">Evaluar</button>		
+		</div>
+		<div class="col-md-3 text-center">
+			<h4 class="text-info">Hoy</h4>
+			<div id="salida" style="font-size: 30px;" class="text-center">-</div>
+			<h4 class="text-info">Podrás dormir</h4>
+		</div>
+	</div>
+</div>
+	
 </body>
 <script src="Js/main.js"></script>
 </html>

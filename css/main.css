@@ -1,28 +1,3 @@
-/**{
+*{
 	outline: 1px solid red;
-}*/
-.objetivo-fondo{
-	background-color: rgb(249,169,26);
-	
-}
-.container{
-	margin-top: 10px;
-}
-h1{
-	color: blue;
-	font-family: 'Fredoka One', cursive;
-}
-p{
-	margin-top: 20px;
-}
-h2{
-	margin-top: 100px;
-	
-}
-label{
-	color: blue;
-	font-family: 'Comfortaa',cursive; 
-}
-.img-responsive{
-	max-width: 40%; !important
 }

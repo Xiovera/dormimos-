@@ -1,15 +1,15 @@
 function calcular()
 {	
-	// Pedir punto_squad
-	var puntosSquad = document.getElementById("punto_squad").value;
-	var maxPuntos = document.getElementById("max_puntos").value;
-	var porcentajeSquad= (100* puntosSquad) / maxPuntos;
+	
+	var  = document.getElementById().value;
+	var  = document.getElementById().value;
+	
 
-	if(porcentajeSquad >= 80)
+	if()
 	{	
-		document.getElementById("salida").innerHTML = "Muy bien Squad!";
+		document.getElementById().innerHTML = ;
 	}else{
-		document.getElementById("salida").innerHTML = "Pueden hacerlo mejor";
+		document.getElementById().innerHTML = ;
 	}
 
 }
