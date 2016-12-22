@@ -1,15 +1,30 @@
 function calcular()
 {	
 	
-	var  = document.getElementById().value;
-	var  = document.getElementById().value;
+	var vacation = document.getElementById("vacaciones").value;
+	var weekday = document.getElementById("dia").value;
+	var isVacation = true;
+	var isWeekday = false;
+	var salida = document.getElementById("salida");
 	
 
-	if()
+	if(vacation == "2")
 	{	
-		document.getElementById().innerHTML = ;
-	}else{
-		document.getElementById().innerHTML = ;
+		isVacation = false;
+	} 
+	if (weekday < 6)
+	{
+		isWeekday = true;
 	}
-
+	if (isVacation)
+	{
+		salida.innerHTML = "1";
+	}else{
+		if (isWeekday)
+		{
+			salida.innerHTML = "0";
+		}else{
+			salida.innerHTML = "1";
+		}
+	}
 }
